@@ -63,9 +63,12 @@ http://localhost:3000/api-docs
 You can test the API endpoints using tools like Postman or through the Swagger UI. The Swagger UI provides a web-based interface where you can interact with the API endpoints directly.
 
 ### Example Requests
+
+#### User Endpoints
+
 1) User Signup:
 
-- Endpoint: POST /users/signup
+- Endpoint: `POST /users/signup`
 - Body:
 ```json
 {
@@ -76,7 +79,7 @@ You can test the API endpoints using tools like Postman or through the Swagger U
 ```
 2) User Login:
 
-- Endpoint: POST /users/login
+- Endpoint: `POST /users/login`
 - Body:
 ```json
 {
@@ -84,9 +87,16 @@ You can test the API endpoints using tools like Postman or through the Swagger U
   "password": "mypassword"
 }
 ```
-3) Create a Task:
+3) User Logout:
 
-- Endpoint: POST /tasks
+- Endpoint: `GET /users/logout`
+- Headers: Authorization: Bearer <your_token_here>
+
+#### Task Endpoints
+
+1) Create a Task:
+
+- Endpoint: `POST /tasks`
 - Headers: Authorization: Bearer <your_token_here>
 - Body:
 ```json
@@ -96,10 +106,37 @@ You can test the API endpoints using tools like Postman or through the Swagger U
   "due_date": "2024-06-30"
 }
 ```
-4) Get All Tasks:
+2) Get All Tasks:
 
-- Endpoint: GET /tasks
+- Endpoint: `GET /tasks`
 - Headers: Authorization: Bearer <your_token_here>
+
+3) Get Task by ID: 
+- Endpoint: `GET /tasks/{id}`
+- Headers: Authorization: Bearer <your_token_here>
+- Parameters:
+ - - `id`: The ID of the task you want to retrieve.
+
+4) Update Task by ID: 
+- Endpoint: `PATCH /tasks/{id}`
+- Headers: Authorization: Bearer <your_token_here>
+- Parameters:
+- - `id`: The ID of the task you want to update.
+- Body:
+```json
+{
+  "title": "Updated Task Title",
+  "description": "Updated details of the task",
+  "due_date": "2024-07-01",
+  "priority": "high",
+  "status": "in progress"
+}
+```
+5) Delete Task by ID:
+- Endpoint: `DELETE /tasks/{id}`
+- Headers: Authorization: Bearer <your_token_here>
+- Parameters:
+- - `id`: The ID of the task you want to delete.
 
 ## Project Structure
 ```bash
@@ -120,11 +157,14 @@ task-management-system/
 │   ├── user.route.js         # User routes
 │   └── task.route.js         # Task routes
 │
+├── tests/
+│   └── UserandTask.test.js  # User and Task managment testcases
+│
 ├── swaggerConfig.js          # Swagger configuration
 │
 ├── .env                      # Environment variables (not included in the repo)
 ├── package.json              # NPM dependencies and scripts
-└── server.js                 # Main server file
+└── index.js                  # Main server file
 ```
 
 ## Additional Notes
