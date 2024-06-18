@@ -15,11 +15,11 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 
 // API routes
 app.use('/users',userRouter);
-app.use('task', taskRouter);
+app.use('/tasks', taskRouter);
 
 
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send({ msg: 'Welcome to Task Management System API' });
 });
 
