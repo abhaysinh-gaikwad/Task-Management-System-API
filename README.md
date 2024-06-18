@@ -2,6 +2,7 @@
 Welcome to the Task Management System API! This API allows you to manage tasks and user accounts efficiently. Below, you'll find instructions on how to set up and run the API locally, as well as how to test it using Swagger UI.
 
 ## Table of Contents
+- Live Deployed Server 
 - Prerequisites
 - Installation
 - Configuration
@@ -10,6 +11,15 @@ Welcome to the Task Management System API! This API allows you to manage tasks a
 - Testing the API
 - Project Structure
 - Additional Notes
+
+## Live Deployed Server
+- The API is deployed and available live on Render at the following URL:
+
+```perl
+https://task-management-system-api-y2zj.onrender.com
+```
+You can use this link to access and interact with the API directly without needing to run it locally.
+
 
 ## Prerequisites
 Before you can set up the API locally, ensure you have the following installed:
@@ -61,6 +71,14 @@ http://localhost:3000/api-docs
 
 ## Testing the API
 You can test the API endpoints using tools like Postman or through the Swagger UI. The Swagger UI provides a web-based interface where you can interact with the API endpoints directly.
+
+### Running Tests Locally
+To run the automated tests for the API, use the following command:
+
+```bash
+npm test
+```
+This command will execute the tests defined in your project and report any issues. Make sure to have your development environment properly set up before running tests.
 
 ### Example Requests
 
