@@ -16,7 +16,7 @@ Welcome to the Task Management System API! This API allows you to manage tasks a
 - The API is deployed and available live on Render at the following URL:
 
 ```perl
-https://task-management-system-api-y2zj.onrender.com
+https://task-management-system-api-y2zj.onrender.com/api-docs/#
 ```
 - swagger docs
 ```perl
