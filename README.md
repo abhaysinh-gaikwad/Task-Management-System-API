@@ -18,6 +18,11 @@ Welcome to the Task Management System API! This API allows you to manage tasks a
 ```perl
 https://task-management-system-api-y2zj.onrender.com
 ```
+- swagger docs
+```perl
+https://task-management-system-api-y2zj.onrender.com/api-docs/#
+http://localhost:3000/api-docs/#
+```
 You can use this link to access and interact with the API directly without needing to run it locally.
 
 
