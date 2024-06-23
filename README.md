@@ -16,8 +16,17 @@ Welcome to the Task Management System API! This API allows you to manage tasks a
 - The API is deployed and available live on Render at the following URL:
 
 ```perl
-https://task-management-system-api-y2zj.onrender.com
+https://task-management-system-api-y2zj.onrender.com/api-docs/#
 ```
+- swagger docs
+```perl
+https://task-management-system-api-y2zj.onrender.com/api-docs/#
+http://localhost:3000/api-docs/#
+```
+- BaseURL
+  ```perl
+  https://task-management-system-api-y2zj.onrender.com
+  ```
 You can use this link to access and interact with the API directly without needing to run it locally.
 
 
@@ -65,7 +74,7 @@ The API will be running at http://localhost:3000
 The API uses Swagger for documentation. Once the server is running, you can access the Swagger UI to explore the API endpoints at:
 
 ```bash
-http://localhost:3000/api-docs
+https://task-management-system-api-y2zj.onrender.com/api-docs/#
 ```
 
 
