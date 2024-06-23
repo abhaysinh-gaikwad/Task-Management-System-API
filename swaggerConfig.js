@@ -11,9 +11,13 @@ const options = {
         },
         servers: [
             {
-                url: "http://localhost:3000",
-                description: "Development server",
+                url:"https://task-management-system-api-y2zj.onrender.com/",
+                description: "Development server reander"
             },
+            {
+                url: "http://localhost:3000",
+                description: "Development server locally",
+            }
         ],
         components: {
             securitySchemes: {
